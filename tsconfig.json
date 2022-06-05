@@ -4,6 +4,7 @@
     "allowSyntheticDefaultImports": true,
     "jsx": "react",
     "target": "ES6",
+    "moduleResolution":"node",
     "baseUrl": "src"
   },
   "include": [

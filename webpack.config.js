@@ -17,10 +17,22 @@ module.exports = {
               }
             },
             { test: /\.tsx?$/, loader: 'ts-loader' },
+            {
+                test: /\.css$/,
+                use: [
+                  { loader: 'style-loader' },
+                  { loader: 'css-loader' },
+                ],
+              },
+
         ]
     },
+    devServer: {
+        historyApiFallback: true,
+      },
     resolve: {
-      extensions: ['*', '.js', '.jsx', '.ts', '.tsx'],
+      extensions: ['*', '.js', '.jsx', '.ts', '.tsx','.css'],
+      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
     },
     plugins: [new HtmlWebPackPlugin({ template: "./src/index.html" })]
 };
