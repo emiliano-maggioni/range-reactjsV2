@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "target": "ES6",
+    "baseUrl": "src"
+  },
+  "include": [
+    "src"
+  ]
+}
